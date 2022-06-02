@@ -1,4 +1,17 @@
-const { defineConfig } = require('@vue/cli-service')
+const { defineConfig } = require('@vue/cli-service');
 module.exports = defineConfig({
-  transpileDependencies: true
-})
+    productionSourceMap: false,
+    transpileDependencies: true,
+    // 关闭打包时生成map文件
+    productionSourceMap: false,
+    // 关闭语法检测
+    lintOnSave: false,
+    // 代理服务器（跨域）
+    // devServer: {
+    //     proxy: {
+    //         '/api': {
+    //             target: 'http://gmall-h5-api.atguigu.cn/',
+    //         },
+    //     },
+    // },
+});

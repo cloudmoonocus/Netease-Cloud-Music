@@ -1,4 +1,11 @@
-import { createApp } from 'vue'
-import App from './App.vue'
+import { createApp } from 'vue';
+import App from './App.vue';
+import 'amfe-flexible/index.js';
+import router from '@/routers';
+import store from '@/store';
+import './assets/icons/iconfont.css';
 
-createApp(App).mount('#app')
+const app = createApp(App);
+app.use(router);
+app.use(store);
+app.mount('#app');

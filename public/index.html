@@ -1,17 +1,32 @@
 <!DOCTYPE html>
 <html lang="">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
-  </head>
-  <body>
-    <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
+        <title><%= htmlWebpackPlugin.options.title %></title>
+        <link rel="stylesheet" type="text/css" href="./reset.css" />
+        <!-- iPhone X 等机型底部存在底部指示条，指示条的操作区域与页面底部存在重合，防止误操作 -->
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover"
+        />
+        <van-nav-bar safe-area-inset-top />
+        <van-number-keyboard safe-area-inset-bottom />
+        <!-- amfe-flexible响应式 -->
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"
+        />
+        <style>
+            /* 更改侧边栏背景 */
+            :root {
+                --van-popup-background-color: #eee;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="app"></div>
+    </body>
 </html>

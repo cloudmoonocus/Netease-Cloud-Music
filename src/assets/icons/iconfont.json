@@ -1,0 +1,198 @@
+{
+  "id": "3447028",
+  "name": "网易云音乐",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "587634",
+      "name": "本地",
+      "font_class": "bendi",
+      "unicode": "e63e",
+      "unicode_decimal": 58942
+    },
+    {
+      "icon_id": "11798021",
+      "name": "我的好友",
+      "font_class": "wodehaoyou",
+      "unicode": "e737",
+      "unicode_decimal": 59191
+    },
+    {
+      "icon_id": "13820034",
+      "name": "已购",
+      "font_class": "yigou",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    },
+    {
+      "icon_id": "18371893",
+      "name": "上传，云盘",
+      "font_class": "shangchuanyunpan",
+      "unicode": "e6b3",
+      "unicode_decimal": 59059
+    },
+    {
+      "icon_id": "18656900",
+      "name": "收藏",
+      "font_class": "hanhan-01-01",
+      "unicode": "e680",
+      "unicode_decimal": 59008
+    },
+    {
+      "icon_id": "30166694",
+      "name": "罐子",
+      "font_class": "guanzi-copy",
+      "unicode": "e738",
+      "unicode_decimal": 59192
+    },
+    {
+      "icon_id": "29441266",
+      "name": "歌单",
+      "font_class": "gedan",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    },
+    {
+      "icon_id": "19608307",
+      "name": "每日推荐",
+      "font_class": "meirituijian1",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    },
+    {
+      "icon_id": "1048855",
+      "name": "关注",
+      "font_class": "icon_concern",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "2064487",
+      "name": "屋子",
+      "font_class": "wuzi",
+      "unicode": "e6d6",
+      "unicode_decimal": 59094
+    },
+    {
+      "icon_id": "3530010",
+      "name": "网易云音乐",
+      "font_class": "wangyiyunyinle",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "8328457",
+      "name": "实景酷-人数",
+      "font_class": "renshu",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    },
+    {
+      "icon_id": "12278871",
+      "name": "排行榜",
+      "font_class": "paihangbang",
+      "unicode": "e67c",
+      "unicode_decimal": 59004
+    },
+    {
+      "icon_id": "15056495",
+      "name": "音符",
+      "font_class": "yinfu",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "15313363",
+      "name": "广播电台",
+      "font_class": "guangbodiantai",
+      "unicode": "e625",
+      "unicode_decimal": 58917
+    },
+    {
+      "icon_id": "17724759",
+      "name": "发布数字专辑",
+      "font_class": "pic3",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "20699432",
+      "name": "音符",
+      "font_class": "yinfu1",
+      "unicode": "e61c",
+      "unicode_decimal": 58908
+    },
+    {
+      "icon_id": "24753807",
+      "name": "全部分类",
+      "font_class": "quanbufenlei",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "26537664",
+      "name": "网易云音乐",
+      "font_class": "wangyiyunyinyueclick",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "26858034",
+      "name": "播客",
+      "font_class": "boke1-copy",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "26858151",
+      "name": "播客",
+      "font_class": "boke1-copy1",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "28691457",
+      "name": "首页,屋子,主页,房子",
+      "font_class": "home-full",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "29441229",
+      "name": "新歌",
+      "font_class": "xinge",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
+      "icon_id": "29441230",
+      "name": "发现_歌房",
+      "font_class": "faxian_gefang",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "29441259",
+      "name": "有声书",
+      "font_class": "youshengshu",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
+      "icon_id": "29441263",
+      "name": "私人FM",
+      "font_class": "sirenFM",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "166592",
+      "name": "播放",
+      "font_class": "bofang",
+      "unicode": "e613",
+      "unicode_decimal": 58899
+    }
+  ]
+}
