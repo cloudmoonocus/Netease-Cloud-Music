@@ -3,9 +3,9 @@
         <div id="container">
             网易云音乐
             <div id="flip">
-                <div><div>Made</div></div>
                 <div><div>By</div></div>
-                <div><div>Cludmoon</div></div>
+                <div><div>Made</div></div>
+                <div><div>Cloudmoon</div></div>
             </div>
             严禁商用
         </div>

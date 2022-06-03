@@ -1,7 +1,7 @@
 <template>
     <!-- 顶部 -->
     <van-sticky :offset-top="0">
-        <van-nav-bar title="网易云音乐">
+        <van-nav-bar :title="title">
             <template #left>
                 <van-icon @click="showPopup" name="wap-nav" size="25" style="color: red" />
             </template>
@@ -86,19 +86,27 @@
 <script>
 import { Icon, Sticky, NavBar, Popup, Cell, CellGroup, ConfigProvider, Switch } from 'vant';
 import { Image as VanImage } from 'vant';
-import { ref } from 'vue';
+import { ref, watch } from 'vue';
+import { useRoute } from 'vue-router';
 export default {
     name: 'MyHeader',
     setup() {
+        const route = useRoute();
         let checked = ref();
         const show = ref(false);
+        const title = ref();
         const showPopup = () => {
             show.value = true;
         };
+        // 改变头部信息
+        watch(route, () => {
+            title.value = route.meta.title;
+        });
         return {
             checked,
             show,
             showPopup,
+            title,
         };
     },
     components: {

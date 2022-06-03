@@ -335,7 +335,7 @@ export default {
     transform: translate(-50%);
     margin-top: 10px;
     height: 140px;
-    width: 90%;
+    width: 92%;
 }
 .swiperIn {
     margin-left: 50%;

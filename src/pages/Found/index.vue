@@ -1,110 +1,114 @@
 <template>
-    <!-- 轮播图 -->
-    <div>
-        <van-swipe :autoplay="5000" lazy-render class="swiper" round>
-            <van-swipe-item v-for="image in images" :key="image">
-                <img :src="image" class="swiperIn" />
-            </van-swipe-item>
-        </van-swipe>
-    </div>
-    <!-- 功能列表 -->
-    <div>
-        <van-grid :gutter="5" class="grid" icon-size="25px" column-num="4">
-            <van-grid-item
-                v-for="value in grids"
-                :key="value.id"
-                :icon="value.icon"
-                :text="value.text"
-                class="gridIn"
-            />
-        </van-grid>
-    </div>
-    <!-- 推荐歌单 -->
-    <div class="rec1">
-        <div class="recChild">
-            <span class="recommention">推荐歌单</span>
-            <a href="" class="more">更多 ></a>
-        </div>
-        <van-grid :border="false" :column-num="3">
-            <van-grid-item class="vanGridItem">
-                <van-image
-                    class="vanImage"
-                    radius="5"
-                    src="https://p2.music.126.net/iHbKrvHFfHb1y3Osu9EnPQ==/109951166726930602.jpg?param=140y140"
-                />
-                <a href="" title="其实无论怎么选择，都会有遗憾的对吧">其实无论怎么选择，都会有遗憾的对吧</a>
-            </van-grid-item>
-            <van-grid-item class="vanGridItem">
-                <van-image
-                    class="vanImage"
-                    radius="5"
-                    src="https://p2.music.126.net/EnqPlvMwbrWvcYWHYrMx2w==/109951167298988944.jpg?param=140y140"
-                />
-                <a href="" title="原速是版权 慢速是欣赏">原速是版权 慢速是欣赏</a>
-            </van-grid-item>
-            <van-grid-item class="vanGridItem">
-                <van-image
-                    class="vanImage"
-                    radius="5"
-                    src="https://p2.music.126.net/bpUDG9q4smPN8ReIl2s6cw==/109951167320600625.jpg?param=140y140"
-                />
-                <a href="" title="我对月亮许愿，你要永远快乐">我对月亮许愿，你要永远快乐</a>
-            </van-grid-item>
-        </van-grid>
-    </div>
-    <!-- 推荐歌曲 -->
-    <div class="rec2">
+    <router-view />
+    <div v-if="$route.path == '/found'">
+        <!-- 轮播图 -->
         <div>
-            <span class="recommention">推荐歌曲</span>
-            <a href="" class="more2">播放 ▶️</a>
+            <van-swipe :autoplay="5000" lazy-render class="swiper" round>
+                <van-swipe-item v-for="image in images" :key="image">
+                    <img :src="image" class="swiperIn" />
+                </van-swipe-item>
+            </van-swipe>
         </div>
-        <van-grid :column-num="1" direction="horizontal" class="vanGrid">
-            <van-grid-item v-for="value in grids2" :key="value.id" :icon="value.icon" :text="value.text" />
-        </van-grid>
-    </div>
-    <!-- 新歌 新碟 数字专辑 -->
-    <div class="rec3">
-        <van-tabs v-model:active="active" swipeable>
-            <van-tab title="新歌">
-                <van-grid :column-num="1" direction="horizontal" class="vanGrid">
-                    <van-grid-item v-for="value in grids3" :key="value.id" :icon="value.icon" :text="value.text" />
-                </van-grid>
-            </van-tab>
-            <van-tab title="新碟">
-                <van-grid :column-num="1" direction="horizontal" class="vanGrid">
-                    <van-grid-item v-for="value in grids4" :key="value.id" :icon="value.icon" :text="value.text" />
-                </van-grid>
-            </van-tab>
-            <van-tab title="数字专辑">
-                <van-grid :column-num="1" direction="horizontal" class="vanGrid">
-                    <van-grid-item v-for="value in grids5" :key="value.id" :icon="value.icon" :text="value.text" />
-                </van-grid>
-            </van-tab>
-        </van-tabs>
-    </div>
-    <!-- 排行榜 -->
-    <div class="rec4">
-        <div class="recChild">
-            <span class="recommention">排行榜&nbsp;&nbsp;</span>
-            <a href="" class="more">更多 ></a>
+        <!-- 功能列表 -->
+        <div>
+            <van-grid :gutter="5" class="grid" icon-size="25px" column-num="4">
+                <van-grid-item
+                    v-for="value in grids"
+                    :key="value.id"
+                    :icon="value.icon"
+                    :text="value.text"
+                    :to="value.path"
+                    class="gridIn"
+                />
+            </van-grid>
         </div>
-        <van-grid :column-num="1" direction="horizontal" class="vanGrid">
-            <van-grid-item v-for="value in 5" :key="value" icon="music" text="1️⃣占位" />
-        </van-grid>
-    </div>
-    <!-- 热门话题 -->
-    <div class="rec5">
-        <div class="recChild">
-            <span class="recommention">热门话题</span>
+        <!-- 推荐歌单 -->
+        <div class="rec1">
+            <div class="recChild">
+                <span class="recommention">推荐歌单</span>
+                <a href="" class="more">更多 ></a>
+            </div>
+            <van-grid :border="false" :column-num="3">
+                <van-grid-item class="vanGridItem">
+                    <van-image
+                        class="vanImage"
+                        radius="5"
+                        src="https://p2.music.126.net/iHbKrvHFfHb1y3Osu9EnPQ==/109951166726930602.jpg?param=140y140"
+                    />
+                    <a href="" title="其实无论怎么选择，都会有遗憾的对吧">其实无论怎么选择，都会有遗憾的对吧</a>
+                </van-grid-item>
+                <van-grid-item class="vanGridItem">
+                    <van-image
+                        class="vanImage"
+                        radius="5"
+                        src="https://p2.music.126.net/EnqPlvMwbrWvcYWHYrMx2w==/109951167298988944.jpg?param=140y140"
+                    />
+                    <a href="" title="原速是版权 慢速是欣赏">原速是版权 慢速是欣赏</a>
+                </van-grid-item>
+                <van-grid-item class="vanGridItem">
+                    <van-image
+                        class="vanImage"
+                        radius="5"
+                        src="https://p2.music.126.net/bpUDG9q4smPN8ReIl2s6cw==/109951167320600625.jpg?param=140y140"
+                    />
+                    <a href="" title="我对月亮许愿，你要永远快乐">我对月亮许愿，你要永远快乐</a>
+                </van-grid-item>
+            </van-grid>
         </div>
-        <van-grid :column-num="1" direction="horizontal" class="vanGrid">
-            <van-grid-item v-for="value in 10" :key="value" icon="shop" text="1️⃣占位" />
-        </van-grid>
+        <!-- 推荐歌曲 -->
+        <div class="rec2">
+            <div>
+                <span class="recommention">推荐歌曲</span>
+                <a href="" class="more2">播放 ▶️</a>
+            </div>
+            <van-grid :column-num="1" direction="horizontal" class="vanGrid">
+                <van-grid-item v-for="value in grids2" :key="value.id" :icon="value.icon" :text="value.text" />
+            </van-grid>
+        </div>
+        <!-- 新歌 新碟 数字专辑 -->
+        <div class="rec3">
+            <van-tabs v-model:active="active" swipeable>
+                <van-tab title="新歌">
+                    <van-grid :column-num="1" direction="horizontal" class="vanGrid">
+                        <van-grid-item v-for="value in grids3" :key="value.id" :icon="value.icon" :text="value.text" />
+                    </van-grid>
+                </van-tab>
+                <van-tab title="新碟">
+                    <van-grid :column-num="1" direction="horizontal" class="vanGrid">
+                        <van-grid-item v-for="value in grids4" :key="value.id" :icon="value.icon" :text="value.text" />
+                    </van-grid>
+                </van-tab>
+                <van-tab title="数字专辑">
+                    <van-grid :column-num="1" direction="horizontal" class="vanGrid">
+                        <van-grid-item v-for="value in grids5" :key="value.id" :icon="value.icon" :text="value.text" />
+                    </van-grid>
+                </van-tab>
+            </van-tabs>
+        </div>
+        <!-- 排行榜 -->
+        <div class="rec4">
+            <div class="recChild">
+                <span class="recommention">排行榜&nbsp;&nbsp;</span>
+                <a href="" class="more">更多 ></a>
+            </div>
+            <van-grid :column-num="1" direction="horizontal" class="vanGrid">
+                <van-grid-item v-for="value in 5" :key="value" icon="music" text="1️⃣占位" />
+            </van-grid>
+        </div>
+        <!-- 热门话题 -->
+        <div class="rec5">
+            <div class="recChild">
+                <span class="recommention">热门话题</span>
+            </div>
+            <van-grid :column-num="1" direction="horizontal" class="vanGrid">
+                <van-grid-item v-for="value in 10" :key="value" icon="shop" text="1️⃣占位" />
+            </van-grid>
+        </div>
+        <!-- 底部 -->
+        <Tip />
+        <!-- 防止底部遮挡 -->
+        <div style="height: 60px; width: 100%"></div>
     </div>
-    <!-- 底部 -->
-    <Tip />
-    <!-- 防止底部遮挡 -->
-    <div style="height: 60px; width: 100%"></div>
 </template>
 
 <script>
@@ -125,16 +129,17 @@ export default {
             'https://p1.music.126.net/-rmocvj9qxcCIlsQemMGjw==/109951167497644391.jpg?imageView&quality=89',
             'https://p1.music.126.net/hHj81Oi3yQiFEp7BfUhKYQ==/109951167497696790.jpg?imageView&quality=89',
         ];
+
         // 功能列表
         const grids = [
-            { id: 1, icon: 'hot', text: '每日推荐' },
-            { id: 2, icon: 'audio', text: '私人FM' },
-            { id: 3, icon: 'column', text: '歌单' },
-            { id: 4, icon: 'descending', text: '排行榜' },
-            { id: 5, icon: 'coupon', text: '数字专辑' },
-            { id: 6, icon: 'graphic', text: '有声书' },
-            { id: 7, icon: 'music', text: '关注新歌' },
-            { id: 8, icon: 'fire', text: '歌房' },
+            { id: 1, icon: 'hot', text: '每日推荐', path: '/found/dailyrecommendation' },
+            { id: 2, icon: 'audio', text: '私人FM', path: '/found/privatefm' },
+            { id: 3, icon: 'column', text: '歌单', path: '/found/musiclist' },
+            { id: 4, icon: 'descending', text: '排行榜', path: '/found/rankinglist' },
+            { id: 5, icon: 'coupon', text: '数字专辑', path: '/found/digitalalbum' },
+            { id: 6, icon: 'graphic', text: '有声书', path: '/found/soundbook' },
+            { id: 7, icon: 'music', text: '关注新歌', path: '/found/focusnewmusic' },
+            { id: 8, icon: 'fire', text: '歌房', path: '/found/musichouse' },
         ];
 
         // 推荐歌曲
@@ -235,7 +240,7 @@ export default {
     transform: translate(-50%);
     margin-top: 10px;
     height: 140px;
-    width: 90%;
+    width: 92%;
 }
 .swiperIn {
     margin-left: 50%;
