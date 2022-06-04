@@ -1,68 +1,89 @@
 <template>
-    <!-- <div style="background-color: #fff"> -->
-    <!-- 顶部图片 -->
-    <div class="head">
-        <div class="pure_top"></div>
+    <div style="background-color: #fff">
+        <!-- 顶部图片 -->
+        <div class="head">
+            <div class="pure_top"></div>
+        </div>
+        <!-- 第二层-播放全部- -->
+        <div class="second">
+            <van-icon name="play-circle" style="color: red; font-size: 30px; margin-left: 15px" />
+            <span>播放全部</span>
+            <van-icon name="passed" style="color: #000; font-size: 30px; margin-left: 55%" />
+        </div>
+        <!-- 歌曲列表 -->
+        <div class="third">
+            <div class="card">
+                <img
+                    src="https://p2.music.126.net/XYXw4JhqbH4szy0IwQ4cmA==/109951165825546595.jpg?param=130y130"
+                    alt=""
+                />
+                <div>Always online(温柔男声)</div>
+                <div>嘉琪先生</div>
+                <van-icon name="play-circle-o" class="play-circle-o" />
+                <van-icon name="more-o" class="more-o" />
+            </div>
+            <div class="card">
+                <img
+                    src="https://p2.music.126.net/XYXw4JhqbH4szy0IwQ4cmA==/109951165825546595.jpg?param=130y130"
+                    alt=""
+                />
+                <div>Always online(温柔男声)</div>
+                <div>嘉琪先生</div>
+                <van-icon name="play-circle-o" class="play-circle-o" />
+                <van-icon name="more-o" class="more-o" />
+            </div>
+            <div class="card">
+                <img
+                    src="https://p2.music.126.net/XYXw4JhqbH4szy0IwQ4cmA==/109951165825546595.jpg?param=130y130"
+                    alt=""
+                />
+                <div>Always online(温柔男声)</div>
+                <div>嘉琪先生</div>
+                <van-icon name="play-circle-o" class="play-circle-o" />
+                <van-icon name="more-o" class="more-o" />
+            </div>
+            <div class="card">
+                <img
+                    src="https://p2.music.126.net/XYXw4JhqbH4szy0IwQ4cmA==/109951165825546595.jpg?param=130y130"
+                    alt=""
+                />
+                <div>Always online(温柔男声)</div>
+                <div>嘉琪先生</div>
+                <van-icon name="play-circle-o" class="play-circle-o" />
+                <van-icon name="more-o" class="more-o" />
+            </div>
+            <div class="card">
+                <img
+                    src="https://p2.music.126.net/XYXw4JhqbH4szy0IwQ4cmA==/109951165825546595.jpg?param=130y130"
+                    alt=""
+                />
+                <div>Always online(温柔男声)</div>
+                <div>嘉琪先生</div>
+                <van-icon name="play-circle-o" class="play-circle-o" />
+                <van-icon name="more-o" class="more-o" />
+            </div>
+            <div class="card">
+                <img
+                    src="https://p2.music.126.net/XYXw4JhqbH4szy0IwQ4cmA==/109951165825546595.jpg?param=130y130"
+                    alt=""
+                />
+                <div>Always online(温柔男声)</div>
+                <div>嘉琪先生</div>
+                <van-icon name="play-circle-o" class="play-circle-o" />
+                <van-icon name="more-o" class="more-o" />
+            </div>
+            <div class="card">
+                <img
+                    src="https://p2.music.126.net/XYXw4JhqbH4szy0IwQ4cmA==/109951165825546595.jpg?param=130y130"
+                    alt=""
+                />
+                <div>Always online(温柔男声)</div>
+                <div>嘉琪先生</div>
+                <van-icon name="play-circle-o" class="play-circle-o" />
+                <van-icon name="more-o" class="more-o" />
+            </div>
+        </div>
     </div>
-    <!-- 第二层-播放全部- -->
-    <div class="second">
-        <van-icon name="play-circle" style="color: red; font-size: 30px; margin-left: 15px" />
-        <span>播放全部</span>
-        <van-icon name="passed" style="color: #000; font-size: 30px; margin-left: 55%" />
-    </div>
-    <!-- 歌曲列表 -->
-    <div class="third">
-        <div class="card">
-            <img src="https://p2.music.126.net/XYXw4JhqbH4szy0IwQ4cmA==/109951165825546595.jpg?param=130y130" alt="" />
-            <div>Always online(温柔男声)</div>
-            <div>嘉琪先生</div>
-            <van-icon name="play-circle-o" class="play-circle-o" />
-            <van-icon name="more-o" class="more-o" />
-        </div>
-        <div class="card">
-            <img src="https://p2.music.126.net/XYXw4JhqbH4szy0IwQ4cmA==/109951165825546595.jpg?param=130y130" alt="" />
-            <div>Always online(温柔男声)</div>
-            <div>嘉琪先生</div>
-            <van-icon name="play-circle-o" class="play-circle-o" />
-            <van-icon name="more-o" class="more-o" />
-        </div>
-        <div class="card">
-            <img src="https://p2.music.126.net/XYXw4JhqbH4szy0IwQ4cmA==/109951165825546595.jpg?param=130y130" alt="" />
-            <div>Always online(温柔男声)</div>
-            <div>嘉琪先生</div>
-            <van-icon name="play-circle-o" class="play-circle-o" />
-            <van-icon name="more-o" class="more-o" />
-        </div>
-        <div class="card">
-            <img src="https://p2.music.126.net/XYXw4JhqbH4szy0IwQ4cmA==/109951165825546595.jpg?param=130y130" alt="" />
-            <div>Always online(温柔男声)</div>
-            <div>嘉琪先生</div>
-            <van-icon name="play-circle-o" class="play-circle-o" />
-            <van-icon name="more-o" class="more-o" />
-        </div>
-        <div class="card">
-            <img src="https://p2.music.126.net/XYXw4JhqbH4szy0IwQ4cmA==/109951165825546595.jpg?param=130y130" alt="" />
-            <div>Always online(温柔男声)</div>
-            <div>嘉琪先生</div>
-            <van-icon name="play-circle-o" class="play-circle-o" />
-            <van-icon name="more-o" class="more-o" />
-        </div>
-        <div class="card">
-            <img src="https://p2.music.126.net/XYXw4JhqbH4szy0IwQ4cmA==/109951165825546595.jpg?param=130y130" alt="" />
-            <div>Always online(温柔男声)</div>
-            <div>嘉琪先生</div>
-            <van-icon name="play-circle-o" class="play-circle-o" />
-            <van-icon name="more-o" class="more-o" />
-        </div>
-        <div class="card">
-            <img src="https://p2.music.126.net/XYXw4JhqbH4szy0IwQ4cmA==/109951165825546595.jpg?param=130y130" alt="" />
-            <div>Always online(温柔男声)</div>
-            <div>嘉琪先生</div>
-            <van-icon name="play-circle-o" class="play-circle-o" />
-            <van-icon name="more-o" class="more-o" />
-        </div>
-    </div>
-    <!-- </div> -->
 </template>
 
 <script>
