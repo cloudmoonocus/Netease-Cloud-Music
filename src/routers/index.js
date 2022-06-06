@@ -1,7 +1,7 @@
-import { createRouter, createWebHistory } from 'vue-router';
+import { createRouter, createWebHashHistory } from 'vue-router';
 
 const router = createRouter({
-    history: createWebHistory(),
+    history: createWebHashHistory(),
     scrollBehavior(to, from, savedPosition) {
         if (savedPosition) {
             return savedPosition;
@@ -45,6 +45,26 @@ const router = createRouter({
                     path: 'digitalalbum',
                     component: () => import('@/pages/Found/DigitalAlbum'),
                     meta: { title: '数字专辑', show: false },
+                    children: [
+                        {
+                            name: 'hotlist',
+                            path: 'hotlist',
+                            component: () => import('@/pages/Found/DigitalAlbum/HotList'),
+                            meta: { title: '畅销榜', show: false },
+                        },
+                        {
+                            name: 'musiclanguage',
+                            path: 'musiclanguage',
+                            component: () => import('@/pages/Found/DigitalAlbum/MusicLanguage'),
+                            meta: { title: '语种风格馆', show: false },
+                        },
+                        {
+                            name: 'albumbuy',
+                            path: 'albumbuy',
+                            component: () => import('@/pages/Found/DigitalAlbum/AlbumBuy'),
+                            meta: { title: '已购', show: false },
+                        },
+                    ],
                 },
                 {
                     name: 'soundbook',

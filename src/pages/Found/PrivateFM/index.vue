@@ -7,7 +7,7 @@
             <span class="author">曹浩煜&nbsp;</span>
             <van-icon name="add-o" class="icon" />
         </div>
-        <van-slider v-model="value" active-color="#ee0a24" @change="onChange" class="bottom">
+        <van-slider v-model="value" active-color="#e60026" @change="onChange" class="bottom">
             <template #button>
                 <div class="custom-button">{{ value }}</div>
             </template>
@@ -89,7 +89,7 @@ export default {
             font-size: 13px;
             line-height: 18px;
             text-align: center;
-            background-color: red;
+            background-color: #e60026;
             border-radius: 100px;
         }
     }

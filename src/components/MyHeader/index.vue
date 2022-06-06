@@ -3,10 +3,10 @@
     <van-sticky :offset-top="0">
         <van-nav-bar :title="title">
             <template #left>
-                <van-icon @click="showPopup" name="wap-nav" size="25" style="color: red" />
+                <van-icon @click="showPopup" name="wap-nav" size="25" style="color: #e60026" />
             </template>
             <template #right>
-                <van-icon name="search" size="25" style="color: red" />
+                <van-icon name="search" size="25" style="color: #e60026" />
             </template>
         </van-nav-bar>
     </van-sticky>
@@ -77,7 +77,7 @@
         </van-cell-group>
         <br />
         <van-cell-group inset>
-            <van-cell center style="color: red" title="退出登录/关闭" />
+            <van-cell center style="color: #e60026" title="退出登录/关闭" />
         </van-cell-group>
         <br />
     </van-popup>

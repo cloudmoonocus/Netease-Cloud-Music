@@ -26,7 +26,7 @@
         <div class="rec1">
             <div class="recChild">
                 <span class="recommention">推荐歌单</span>
-                <a href="" class="more">更多 ></a>
+                <a class="more" @click="$router.push('/found/musiclist')">更多 ></a>
             </div>
             <van-grid :border="false" :column-num="3">
                 <van-grid-item class="vanGridItem">
@@ -35,7 +35,7 @@
                         radius="5"
                         src="https://p2.music.126.net/iHbKrvHFfHb1y3Osu9EnPQ==/109951166726930602.jpg?param=140y140"
                     />
-                    <a href="" title="其实无论怎么选择，都会有遗憾的对吧">其实无论怎么选择，都会有遗憾的对吧</a>
+                    <a title="其实无论怎么选择，都会有遗憾的对吧">其实无论怎么选择，都会有遗憾的对吧</a>
                 </van-grid-item>
                 <van-grid-item class="vanGridItem">
                     <van-image
@@ -43,7 +43,7 @@
                         radius="5"
                         src="https://p2.music.126.net/EnqPlvMwbrWvcYWHYrMx2w==/109951167298988944.jpg?param=140y140"
                     />
-                    <a href="" title="原速是版权 慢速是欣赏">原速是版权 慢速是欣赏</a>
+                    <a title="原速是版权 慢速是欣赏">原速是版权 慢速是欣赏</a>
                 </van-grid-item>
                 <van-grid-item class="vanGridItem">
                     <van-image
@@ -51,7 +51,7 @@
                         radius="5"
                         src="https://p2.music.126.net/bpUDG9q4smPN8ReIl2s6cw==/109951167320600625.jpg?param=140y140"
                     />
-                    <a href="" title="我对月亮许愿，你要永远快乐">我对月亮许愿，你要永远快乐</a>
+                    <a title="我对月亮许愿，你要永远快乐">我对月亮许愿，你要永远快乐</a>
                 </van-grid-item>
             </van-grid>
         </div>
@@ -59,7 +59,9 @@
         <div class="rec2">
             <div>
                 <span class="recommention">推荐歌曲</span>
-                <a href="" class="more2">播放 ▶️</a>
+                <a class="more2" @click="$router.push('/found/dailyrecommendation')"
+                    >播放<van-icon name="play-circle-o"
+                /></a>
             </div>
             <van-grid :column-num="1" direction="horizontal" class="vanGrid">
                 <van-grid-item v-for="value in grids2" :key="value.id" :icon="value.icon" :text="value.text" />
@@ -89,7 +91,7 @@
         <div class="rec4">
             <div class="recChild">
                 <span class="recommention">排行榜&nbsp;&nbsp;</span>
-                <a href="" class="more">更多 ></a>
+                <a class="more" @click="$router.push('/found/rankinglist')">更多 ></a>
             </div>
             <van-grid :column-num="1" direction="horizontal" class="vanGrid">
                 <van-grid-item v-for="value in 5" :key="value" icon="music" text="1️⃣占位" />
@@ -116,6 +118,7 @@ import { Swipe, SwipeItem, Grid, GridItem, Icon, Tab, Tabs } from 'vant';
 import { Image as VanImage } from 'vant';
 import Tip from '@/components/Tip';
 import { ref } from 'vue';
+import router from '@/routers';
 export default {
     name: 'Found',
     setup() {
@@ -259,7 +262,7 @@ export default {
     width: 92%;
 }
 .gridIn {
-    color: red;
+    color: #e60026;
 }
 .rec1 {
     background-color: #fff;

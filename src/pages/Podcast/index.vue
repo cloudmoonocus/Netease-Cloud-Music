@@ -328,7 +328,7 @@ export default {
     width: 92%;
 }
 .gridIn {
-    color: red;
+    color: #e60026;
 }
 .swiper {
     margin-left: 50%;

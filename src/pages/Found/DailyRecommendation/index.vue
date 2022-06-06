@@ -6,9 +6,8 @@
         </div>
         <!-- 第二层-播放全部- -->
         <div class="second">
-            <van-icon name="play-circle" style="color: red; font-size: 30px; margin-left: 15px" />
+            <van-icon name="play-circle" style="color: #e60026; font-size: 30px; margin-left: 15px" />
             <span>播放全部</span>
-            <van-icon name="passed" style="color: #000; font-size: 30px; margin-left: 55%" />
         </div>
         <!-- 歌曲列表 -->
         <div class="third">
