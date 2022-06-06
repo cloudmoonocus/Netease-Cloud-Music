@@ -97,6 +97,44 @@ const router = createRouter({
             path: '/podcast',
             component: () => import('@/pages/Podcast'),
             meta: { active: 1, title: '播客', show: true },
+            children: [
+                {
+                    name: 'mypodcast',
+                    path: 'mypodcast',
+                    component: () => import('@/pages/Podcast/MyPodCast'),
+                    meta: { title: '我的播客', show: false },
+                },
+                {
+                    name: 'allcategories',
+                    path: 'allcategories',
+                    component: () => import('@/pages/Podcast/AllCategories'),
+                    meta: { title: '全部分类', show: false },
+                },
+                {
+                    name: 'podcastrankinglist',
+                    path: 'podcastrankinglist',
+                    component: () => import('@/pages/Podcast/PodcastRankingList'),
+                    meta: { title: '排行榜', show: false },
+                },
+                {
+                    name: 'nightsleep',
+                    path: 'nightsleep',
+                    component: () => import('@/pages/Podcast/NightSleep'),
+                    meta: { title: '助眠解压', show: false },
+                },
+                {
+                    name: 'soundbook',
+                    path: 'soundbook',
+                    component: () => import('@/pages/Podcast/SoundBook'),
+                    meta: { title: '有声书', show: false },
+                },
+                {
+                    name: 'fm',
+                    path: 'fm',
+                    component: () => import('@/pages/Podcast/FM'),
+                    meta: { title: '广播电台', show: false },
+                },
+            ],
         },
         {
             name: 'myindex',
@@ -138,12 +176,6 @@ const router = createRouter({
                     name: 'collection-praise',
                     path: 'collection-praise',
                     component: () => import('@/pages/MyIndex/Collection-Praise'),
-                    meta: {},
-                },
-                {
-                    name: 'mypodcast',
-                    path: 'mypodcast',
-                    component: () => import('@/pages/MyIndex/MyPodcast'),
                     meta: {},
                 },
                 {
