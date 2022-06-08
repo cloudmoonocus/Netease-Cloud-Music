@@ -1,129 +1,133 @@
 <template>
-    <!-- 主页头部 -->
-    <div class="myHead">
-        <img src="https://avatars.githubusercontent.com/u/98140702?s=96&v=4" alt="你的头像" class="headImage" />
-        <div class="headName">cloudmoon</div>
-        <div class="headInfor">
-            2 关注&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;1
-            粉丝&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;Lv.7
+    <router-view />
+    <div v-if="$route.path == '/myindex'">
+        <!-- 主页头部 -->
+        <div class="myHead">
+            <img src="https://avatars.githubusercontent.com/u/98140702?s=96&v=4" alt="你的头像" class="headImage" />
+            <div class="headName">cloudmoon</div>
+            <div class="headInfor">
+                2 关注&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;1
+                粉丝&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;Lv.7
+            </div>
         </div>
-    </div>
-    <!-- 功能列表 -->
-    <div class="second">
-        <van-grid :gutter="5" class="grid" icon-size="25px" column-num="4">
-            <van-grid-item
-                v-for="value in grids"
-                :key="value.id"
-                :icon="value.icon"
-                :text="value.text"
-                class="gridIn"
+        <!-- 功能列表 -->
+        <div class="second">
+            <van-grid :gutter="5" class="grid" icon-size="25px" column-num="4">
+                <van-grid-item
+                    v-for="value in grids"
+                    :key="value.id"
+                    :icon="value.icon"
+                    :text="value.text"
+                    :to="value.path"
+                    class="gridIn"
+                />
+            </van-grid>
+        </div>
+        <!-- 喜欢的音乐 -->
+        <div class="third">
+            <img
+                src="https://p1.music.126.net/E5JYsO4DR4_Y-CdidpUVCw==/109951164473460772.jpg?param=140y140"
+                alt="喜欢的音乐"
             />
-        </van-grid>
+            <div>我喜欢的音乐</div>
+            <div>43首</div>
+            <div>
+                <van-icon name="like" />
+                <span>心动模式</span>
+            </div>
+        </div>
+        <!-- 创建歌单 -->
+        <div class="fourth">
+            <div>
+                <span>创建歌单(3个)</span>
+                <van-icon name="more-o" class="more-o" />
+                <van-icon name="plus" class="plus" />
+            </div>
+            <div>
+                <!-- 歌单 -->
+                <div class="card">
+                    <img
+                        src="https://p1.music.126.net/E5JYsO4DR4_Y-CdidpUVCw==/109951164473460772.jpg?param=140y140"
+                        alt="歌单占位"
+                    />
+                    <div>歌单占位</div>
+                    <div>43首</div>
+                    <div>
+                        <van-icon name="more-o" />
+                    </div>
+                </div>
+                <div class="card">
+                    <img
+                        src="https://p1.music.126.net/E5JYsO4DR4_Y-CdidpUVCw==/109951164473460772.jpg?param=140y140"
+                        alt="歌单占位"
+                    />
+                    <div>歌单占位</div>
+                    <div>43首</div>
+                    <div>
+                        <van-icon name="more-o" />
+                    </div>
+                </div>
+                <div class="card">
+                    <img
+                        src="https://p1.music.126.net/E5JYsO4DR4_Y-CdidpUVCw==/109951164473460772.jpg?param=140y140"
+                        alt="歌单占位"
+                    />
+                    <div>歌单占位</div>
+                    <div>43首</div>
+                    <div>
+                        <van-icon name="more-o" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 收藏歌单 -->
+        <div class="fourth">
+            <div>
+                <span>收藏歌单(5个)</span>
+                <van-icon name="more-o" class="more-o" />
+            </div>
+            <div>
+                <!-- 歌单 -->
+                <div class="card">
+                    <img
+                        src="https://p1.music.126.net/E5JYsO4DR4_Y-CdidpUVCw==/109951164473460772.jpg?param=140y140"
+                        alt="收藏歌单占位"
+                    />
+                    <div>收藏歌单占位</div>
+                    <div>xxxxx</div>
+                    <div>
+                        <van-icon name="more-o" />
+                    </div>
+                </div>
+                <div class="card">
+                    <img
+                        src="https://p1.music.126.net/E5JYsO4DR4_Y-CdidpUVCw==/109951164473460772.jpg?param=140y140"
+                        alt="收藏歌单占位"
+                    />
+                    <div>收藏歌单占位</div>
+                    <div>xxxxx</div>
+                    <div>
+                        <van-icon name="more-o" />
+                    </div>
+                </div>
+                <div class="card">
+                    <img
+                        src="https://p1.music.126.net/E5JYsO4DR4_Y-CdidpUVCw==/109951164473460772.jpg?param=140y140"
+                        alt="收藏歌单占位"
+                    />
+                    <div>收藏歌单占位</div>
+                    <div>xxxxx</div>
+                    <div>
+                        <van-icon name="more-o" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 底部 -->
+        <Tip />
+        <!-- 防止底部遮挡 -->
+        <div style="height: 60px; width: 100%"></div>
     </div>
-    <!-- 喜欢的音乐 -->
-    <div class="third">
-        <img
-            src="https://p1.music.126.net/E5JYsO4DR4_Y-CdidpUVCw==/109951164473460772.jpg?param=140y140"
-            alt="喜欢的音乐"
-        />
-        <div>我喜欢的音乐</div>
-        <div>43首</div>
-        <div>
-            <van-icon name="like" />
-            <span>心动模式</span>
-        </div>
-    </div>
-    <!-- 创建歌单 -->
-    <div class="fourth">
-        <div>
-            <span>创建歌单(3个)</span>
-            <van-icon name="more-o" class="more-o" />
-            <van-icon name="plus" class="plus" />
-        </div>
-        <div>
-            <!-- 歌单 -->
-            <div class="card">
-                <img
-                    src="https://p1.music.126.net/E5JYsO4DR4_Y-CdidpUVCw==/109951164473460772.jpg?param=140y140"
-                    alt="歌单占位"
-                />
-                <div>歌单占位</div>
-                <div>43首</div>
-                <div>
-                    <van-icon name="more-o" />
-                </div>
-            </div>
-            <div class="card">
-                <img
-                    src="https://p1.music.126.net/E5JYsO4DR4_Y-CdidpUVCw==/109951164473460772.jpg?param=140y140"
-                    alt="歌单占位"
-                />
-                <div>歌单占位</div>
-                <div>43首</div>
-                <div>
-                    <van-icon name="more-o" />
-                </div>
-            </div>
-            <div class="card">
-                <img
-                    src="https://p1.music.126.net/E5JYsO4DR4_Y-CdidpUVCw==/109951164473460772.jpg?param=140y140"
-                    alt="歌单占位"
-                />
-                <div>歌单占位</div>
-                <div>43首</div>
-                <div>
-                    <van-icon name="more-o" />
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- 收藏歌单 -->
-    <div class="fourth">
-        <div>
-            <span>收藏歌单(5个)</span>
-            <van-icon name="more-o" class="more-o" />
-        </div>
-        <div>
-            <!-- 歌单 -->
-            <div class="card">
-                <img
-                    src="https://p1.music.126.net/E5JYsO4DR4_Y-CdidpUVCw==/109951164473460772.jpg?param=140y140"
-                    alt="收藏歌单占位"
-                />
-                <div>收藏歌单占位</div>
-                <div>xxxxx</div>
-                <div>
-                    <van-icon name="more-o" />
-                </div>
-            </div>
-            <div class="card">
-                <img
-                    src="https://p1.music.126.net/E5JYsO4DR4_Y-CdidpUVCw==/109951164473460772.jpg?param=140y140"
-                    alt="收藏歌单占位"
-                />
-                <div>收藏歌单占位</div>
-                <div>xxxxx</div>
-                <div>
-                    <van-icon name="more-o" />
-                </div>
-            </div>
-            <div class="card">
-                <img
-                    src="https://p1.music.126.net/E5JYsO4DR4_Y-CdidpUVCw==/109951164473460772.jpg?param=140y140"
-                    alt="收藏歌单占位"
-                />
-                <div>收藏歌单占位</div>
-                <div>xxxxx</div>
-                <div>
-                    <van-icon name="more-o" />
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- 底部 -->
-    <Tip />
-    <!-- 防止底部遮挡 -->
-    <div style="height: 60px; width: 100%"></div>
 </template>
 
 <script>
@@ -135,14 +139,14 @@ export default {
     setup() {
         // 功能列表
         const grids = [
-            { id: 1, icon: 'play-circle', text: '最近播放' },
-            { id: 2, icon: 'graphic', text: '本地/下载' },
-            { id: 3, icon: 'live', text: '云盘' },
-            { id: 4, icon: 'shop-collect', text: '已购' },
-            { id: 5, icon: 'manager', text: '我的好友' },
-            { id: 6, icon: 'like', text: '收藏和赞' },
-            { id: 7, icon: 'audio', text: '我的播客' },
-            { id: 8, icon: 'new', text: '音乐罐子' },
+            { id: 1, icon: 'play-circle', text: '最近播放', path: '/myindex/rencently' },
+            { id: 2, icon: 'graphic', text: '本地/下载', path: '/myindex/local-download' },
+            { id: 3, icon: 'live', text: '云盘', path: '/myindex/cloudpan' },
+            { id: 4, icon: 'shop-collect', text: '已购', path: '/myindex/buy' },
+            { id: 5, icon: 'manager', text: '我的好友', path: '/myindex/friends' },
+            { id: 6, icon: 'like', text: '收藏和赞', path: '/myindex/collection-praise' },
+            { id: 7, icon: 'audio', text: '我的播客', path: '/myindex/index-podcast' },
+            { id: 8, icon: 'new', text: '音乐罐子', path: '/myindex/musicbottle' },
         ];
         return { grids };
     },

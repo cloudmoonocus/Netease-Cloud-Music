@@ -24,3 +24,13 @@ f356660222@foxmail.com
     -   调用 API 时再制作\*
 -   发现-播客页的布局优化
     -   后期优化\*
+-   CSS 实现简单的超过行数隐藏
+    -   ```CSS
+        // 超过x行隐藏
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: "行数";
+        -webkit-box-orient: vertical;
+        ```
+-   如何在播客页跳转任意指定标签页时候，使用 Vant 组件方法的 scrollTo 跳转
+    -   暂未解决

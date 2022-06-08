@@ -109,6 +109,11 @@ const router = createRouter({
                     path: 'allcategories',
                     component: () => import('@/pages/Podcast/AllCategories'),
                     meta: { title: '全部分类', show: false },
+                    props: ($route) => {
+                        return {
+                            more2: $route.query.more2,
+                        };
+                    },
                 },
                 {
                     name: 'podcastrankinglist',
@@ -146,43 +151,49 @@ const router = createRouter({
                     name: 'rencently',
                     path: 'rencently',
                     component: () => import('@/pages/MyIndex/Rencently'),
-                    meta: {},
+                    meta: { title: '最近播放', show: false },
                 },
                 {
                     name: 'local-download',
                     path: 'local-download',
                     component: () => import('@/pages/MyIndex/Local-Download'),
-                    meta: {},
+                    meta: { title: '本地/下载', show: false },
                 },
                 {
                     name: 'cloudpan',
                     path: 'cloudpan',
                     component: () => import('@/pages/MyIndex/CloudPan'),
-                    meta: {},
+                    meta: { title: '云盘', show: false },
                 },
                 {
                     name: 'buy',
                     path: 'buy',
                     component: () => import('@/pages/MyIndex/Buy'),
-                    meta: {},
+                    meta: { title: '已购', show: false },
                 },
                 {
                     name: 'friends',
                     path: 'friends',
                     component: () => import('@/pages/MyIndex/Friends'),
-                    meta: {},
+                    meta: { title: '我的好友', show: false },
                 },
                 {
                     name: 'collection-praise',
                     path: 'collection-praise',
                     component: () => import('@/pages/MyIndex/Collection-Praise'),
-                    meta: {},
+                    meta: { title: '收藏和赞', show: false },
+                },
+                {
+                    name: 'index-podcast',
+                    path: 'index-podcast',
+                    component: () => import('@/pages/MyIndex/Index-Podcast'),
+                    meta: { title: '我的播客', show: false },
                 },
                 {
                     name: 'musicbottle',
                     path: 'musicbottle',
                     component: () => import('@/pages/MyIndex/MusicBottle'),
-                    meta: {},
+                    meta: { title: '音乐罐子', show: false },
                 },
             ],
         },

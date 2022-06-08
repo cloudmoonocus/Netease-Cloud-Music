@@ -81,7 +81,7 @@
         </div>
         <!-- 创作翻唱 -->
         <div class="rec1">
-            <div class="recChild">
+            <div class="recChild" @click="$router.push('/podcast/allcategories')">
                 <span class="recommention">创作翻唱</span>
                 <a class="more2">更多 ></a>
             </div>
