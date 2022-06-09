@@ -1,4 +1,5 @@
 <template>
+    <!-- “我的”页面有 “最近播放” “云盘” “已购（单曲）” “我的好友（关注）（粉丝）” “收藏（无声音、K歌、直播）”界面 -->
     <router-view />
     <div v-if="$route.path == '/myindex'">
         <!-- 主页头部 -->
@@ -13,22 +14,14 @@
         <!-- 功能列表 -->
         <div class="second">
             <van-grid :gutter="5" class="grid" icon-size="25px" column-num="4">
-                <van-grid-item
-                    v-for="value in grids"
-                    :key="value.id"
-                    :icon="value.icon"
-                    :text="value.text"
-                    :to="value.path"
-                    class="gridIn"
-                />
+                <van-grid-item v-for="value in grids" :key="value.id" :icon="value.icon" :text="value.text"
+                    :to="value.path" class="gridIn" />
             </van-grid>
         </div>
         <!-- 喜欢的音乐 -->
         <div class="third">
-            <img
-                src="https://p1.music.126.net/E5JYsO4DR4_Y-CdidpUVCw==/109951164473460772.jpg?param=140y140"
-                alt="喜欢的音乐"
-            />
+            <img src="https://p1.music.126.net/E5JYsO4DR4_Y-CdidpUVCw==/109951164473460772.jpg?param=140y140"
+                alt="喜欢的音乐" />
             <div>我喜欢的音乐</div>
             <div>43首</div>
             <div>
@@ -46,10 +39,8 @@
             <div>
                 <!-- 歌单 -->
                 <div class="card">
-                    <img
-                        src="https://p1.music.126.net/E5JYsO4DR4_Y-CdidpUVCw==/109951164473460772.jpg?param=140y140"
-                        alt="歌单占位"
-                    />
+                    <img src="https://p1.music.126.net/E5JYsO4DR4_Y-CdidpUVCw==/109951164473460772.jpg?param=140y140"
+                        alt="歌单占位" />
                     <div>歌单占位</div>
                     <div>43首</div>
                     <div>
@@ -57,10 +48,8 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img
-                        src="https://p1.music.126.net/E5JYsO4DR4_Y-CdidpUVCw==/109951164473460772.jpg?param=140y140"
-                        alt="歌单占位"
-                    />
+                    <img src="https://p1.music.126.net/E5JYsO4DR4_Y-CdidpUVCw==/109951164473460772.jpg?param=140y140"
+                        alt="歌单占位" />
                     <div>歌单占位</div>
                     <div>43首</div>
                     <div>
@@ -68,10 +57,8 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img
-                        src="https://p1.music.126.net/E5JYsO4DR4_Y-CdidpUVCw==/109951164473460772.jpg?param=140y140"
-                        alt="歌单占位"
-                    />
+                    <img src="https://p1.music.126.net/E5JYsO4DR4_Y-CdidpUVCw==/109951164473460772.jpg?param=140y140"
+                        alt="歌单占位" />
                     <div>歌单占位</div>
                     <div>43首</div>
                     <div>
@@ -89,10 +76,8 @@
             <div>
                 <!-- 歌单 -->
                 <div class="card">
-                    <img
-                        src="https://p1.music.126.net/E5JYsO4DR4_Y-CdidpUVCw==/109951164473460772.jpg?param=140y140"
-                        alt="收藏歌单占位"
-                    />
+                    <img src="https://p1.music.126.net/E5JYsO4DR4_Y-CdidpUVCw==/109951164473460772.jpg?param=140y140"
+                        alt="收藏歌单占位" />
                     <div>收藏歌单占位</div>
                     <div>xxxxx</div>
                     <div>
@@ -100,10 +85,8 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img
-                        src="https://p1.music.126.net/E5JYsO4DR4_Y-CdidpUVCw==/109951164473460772.jpg?param=140y140"
-                        alt="收藏歌单占位"
-                    />
+                    <img src="https://p1.music.126.net/E5JYsO4DR4_Y-CdidpUVCw==/109951164473460772.jpg?param=140y140"
+                        alt="收藏歌单占位" />
                     <div>收藏歌单占位</div>
                     <div>xxxxx</div>
                     <div>
@@ -111,10 +94,8 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img
-                        src="https://p1.music.126.net/E5JYsO4DR4_Y-CdidpUVCw==/109951164473460772.jpg?param=140y140"
-                        alt="收藏歌单占位"
-                    />
+                    <img src="https://p1.music.126.net/E5JYsO4DR4_Y-CdidpUVCw==/109951164473460772.jpg?param=140y140"
+                        alt="收藏歌单占位" />
                     <div>收藏歌单占位</div>
                     <div>xxxxx</div>
                     <div>
@@ -201,16 +182,19 @@ export default {
         color: rgb(122, 119, 119);
     }
 }
+
 .second {
     .grid {
         margin: 0 auto;
         margin-top: 10px;
         width: 92%;
     }
+
     .gridIn {
         color: #e60026;
     }
 }
+
 .third {
     position: relative;
     margin: 0 auto;
@@ -257,6 +241,7 @@ export default {
         font-size: 13px;
     }
 }
+
 .fourth {
     margin: 0 auto;
     margin-top: 10px;
