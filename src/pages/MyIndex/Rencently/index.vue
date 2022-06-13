@@ -75,18 +75,20 @@
                     </div>
                 </van-tab>
                 <van-tab title="视频" badge="13">
-
+                    <strong>本页未编写</strong>
                 </van-tab>
                 <van-tab title="声音" badge="23">
-                    <div class="rcSecond">
-                        <van-icon name="play-circle" style="color: #e60026; font-size: 30px; margin-left: 15px" />
-                        <span>播放全部</span>
-                        <span>(300)</span>
-                    </div>
+                    <strong>本页未编写</strong>
                 </van-tab>
-                <van-tab title="歌单" badge="78"></van-tab>
-                <van-tab title="专辑" badge="0"></van-tab>
-                <van-tab title="播客" badge="8"></van-tab>
+                <van-tab title="歌单" badge="78">
+                    <strong>本页未编写</strong>
+                </van-tab>
+                <van-tab title="专辑" badge="0">
+                    <strong>本页未编写</strong>
+                </van-tab>
+                <van-tab title="播客" badge="8">
+                    <strong>本页未编写</strong>
+                </van-tab>
             </van-tabs>
         </div>
     </div>

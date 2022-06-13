@@ -169,7 +169,7 @@ const router = createRouter({
                     name: 'buy',
                     path: 'buy',
                     component: () => import('@/pages/MyIndex/Buy'),
-                    meta: { title: '已购', show: false },
+                    meta: { title: '已购(单曲)', show: false },
                 },
                 {
                     name: 'friends',
