@@ -34,7 +34,7 @@
             <div>
                 <span>创建歌单(3个)</span>
                 <van-icon name="more-o" class="more-o" />
-                <van-icon name="plus" class="plus" />
+                <van-icon name="plus" class="plus" @click="createShow" />
             </div>
             <div>
                 <!-- 歌单 -->
@@ -67,6 +67,9 @@
                 </div>
             </div>
         </div>
+        <van-action-sheet v-model:show="show" title="标题">
+            <div class="content">内容</div>
+        </van-action-sheet>
         <!-- 收藏歌单 -->
         <div class="fourth">
             <div>
@@ -112,9 +115,10 @@
 </template>
 
 <script>
-import { Grid, GridItem, Swipe, SwipeItem, Icon, Divider } from 'vant';
+import { Grid, GridItem, Swipe, SwipeItem, Icon, Divider, ActionSheet } from 'vant';
 import { Image as VanImage } from 'vant';
 import Tip from '@/components/Tip';
+import { ref } from 'vue';
 export default {
     name: 'MyIndex',
     setup() {
@@ -129,7 +133,12 @@ export default {
             { id: 7, icon: 'audio', text: '我的播客', path: '/myindex/index-podcast' },
             { id: 8, icon: 'new', text: '音乐罐子', path: '/myindex/musicbottle' },
         ];
-        return { grids };
+        // 判断展示创建歌单的弹出框
+        const show = ref(false);
+        function createShow() {
+            show.value = !show.value;
+        }
+        return { grids, show, createShow };
     },
     components: {
         Tip,
@@ -140,6 +149,7 @@ export default {
         VanImage: VanImage,
         VanIcon: Icon,
         VanDivider: Divider,
+        VanActionSheet: ActionSheet
     },
 };
 </script>

@@ -1,6 +1,6 @@
 ## Cloudmoon[制作中]
 
-### Vue@3.2.36+Vant@3.49+Vuex@4+VueRouter@4+Nprogress+Axios
+### Vue@3.2.36+Vant@3.49+Pinia+VueRouter@4+Nprogress+Axios
 
 <br>灰：rgb(122, 119, 119)
 <br>网易云音乐红色：#e60026
