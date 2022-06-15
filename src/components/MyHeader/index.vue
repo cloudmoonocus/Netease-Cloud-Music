@@ -6,27 +6,16 @@
                 <van-icon @click="showPopup" name="wap-nav" size="25" style="color: #e60026" />
             </template>
             <template #right>
-                <van-icon name="search" size="25" style="color: #e60026" />
+                <van-icon name="search" size="25" style="color: #e60026" @click="$router.push('/search')" />
             </template>
         </van-nav-bar>
     </van-sticky>
     <!-- 侧边栏 -->
-    <van-popup
-        v-model:show="show"
-        position="left"
-        :style="{ height: '100%', width: '80%', float: 'left' }"
-        class="van-popup"
-    >
+    <van-popup v-model:show="show" position="left" :style="{ height: '100%', width: '80%', float: 'left' }"
+        class="van-popup">
         <div class="headDiv">
-            <van-image
-                round
-                width="35px"
-                height="35px"
-                src="https://avatars.githubusercontent.com/u/98140702?s=96&v=4"
-                fit="cover"
-                position="left"
-                class="van-image"
-            />
+            <van-image round width="35px" height="35px" src="https://avatars.githubusercontent.com/u/98140702?s=96&v=4"
+                fit="cover" position="left" class="van-image" />
             <span class="headSpan">cloudmoonocus</span>
             <van-icon name="arrow" class="head-van-icon" />
             &nbsp;&nbsp;&nbsp;&nbsp;
@@ -127,13 +116,16 @@ export default {
 .van-image {
     margin: 10px 10px;
 }
+
 .headDiv {
     display: flex;
 }
+
 .headSpan {
     font-size: 20px;
     margin-top: 12px;
 }
+
 .head-van-icon {
     font-size: 24px;
     margin-top: 14px;

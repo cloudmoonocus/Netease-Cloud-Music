@@ -10,6 +10,10 @@ const router = createRouter({
         }
     },
     routes: [
+        // !active控制下方标签页的颜色切换
+        // !title控制最上方的标题名称
+        // !show为布尔值，控制底层标签页是否展示
+        // 发现
         {
             name: 'found',
             path: '/found',
@@ -92,6 +96,7 @@ const router = createRouter({
                 },
             ],
         },
+        // 播客
         {
             name: 'podcast',
             path: '/podcast',
@@ -141,6 +146,7 @@ const router = createRouter({
                 },
             ],
         },
+        // 我的
         {
             name: 'myindex',
             path: '/myindex',
@@ -197,28 +203,33 @@ const router = createRouter({
                 },
             ],
         },
+        // 关注
         {
             name: 'attention',
             path: '/attention',
             component: () => import('@/pages/Attention'),
             meta: { active: 3, title: '关注', show: true },
         },
+        // 云村
         {
             name: 'cloudsquare',
             path: '/cloudsquare',
             component: () => import('@/pages/CloudSquare'),
             meta: { active: 4, title: '云村', show: true },
         },
+        // 搜索
         {
             name: 'search',
             path: '/search',
             component: () => import('@/pages/Search'),
-            meta: {},
+            meta: { title: '搜索', show: false },
         },
+        // 自动起始跳转到发现页
         {
             path: '/',
             redirect: '/found',
         },
+        // 404页
         {
             path: '/:catchAll(.*)',
             component: () => import('@/pages/Error'),

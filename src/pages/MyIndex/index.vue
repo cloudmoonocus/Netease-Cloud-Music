@@ -33,8 +33,7 @@
         <div class="fourth">
             <div>
                 <span>创建歌单(3个)</span>
-                <van-icon name="more-o" class="more-o" />
-                <van-icon name="plus" class="plus" @click="createShow" />
+                <van-icon name="plus" class="plus" @click="isCreateShow" />
             </div>
             <div>
                 <!-- 歌单 -->
@@ -44,7 +43,7 @@
                     <div>歌单占位</div>
                     <div>43首</div>
                     <div>
-                        <van-icon name="more-o" />
+                        <van-icon name="more-o" @click="isMoreShow" />
                     </div>
                 </div>
                 <div class="card">
@@ -53,7 +52,7 @@
                     <div>歌单占位</div>
                     <div>43首</div>
                     <div>
-                        <van-icon name="more-o" />
+                        <van-icon name="more-o" @click="isMoreShow" />
                     </div>
                 </div>
                 <div class="card">
@@ -62,19 +61,28 @@
                     <div>歌单占位</div>
                     <div>43首</div>
                     <div>
-                        <van-icon name="more-o" />
+                        <van-icon name="more-o" @click="isMoreShow" />
                     </div>
                 </div>
             </div>
         </div>
-        <van-action-sheet v-model:show="show" title="标题">
-            <div class="content">内容</div>
+        <!-- 创建歌单弹出层 -->
+        <van-action-sheet v-model:show="createShow" title="创建音乐歌单">
+            <van-cell-group inset>
+                <van-field v-model="newMusicList" placeholder="输入新建歌单标题名" maxlength="40" clearable required autofocus />
+                <van-checkbox-group v-model="checked">
+                    <van-checkbox name="shareList" class="checked" checked-color="#e60026">设置为共享歌单（和好友一起管理）
+                        <van-tag round type="danger">限免30天</van-tag>
+                    </van-checkbox>
+                    <van-checkbox name="privateList" class="checked" checked-color="#e60026">设置为私密歌单</van-checkbox>
+                </van-checkbox-group>
+                <van-button round type="primary" size="large" class="submitList" color="#e60026">完成创建</van-button>
+            </van-cell-group>
         </van-action-sheet>
         <!-- 收藏歌单 -->
         <div class="fourth">
             <div>
                 <span>收藏歌单(5个)</span>
-                <van-icon name="more-o" class="more-o" />
             </div>
             <div>
                 <!-- 歌单 -->
@@ -84,7 +92,7 @@
                     <div>收藏歌单占位</div>
                     <div>xxxxx</div>
                     <div>
-                        <van-icon name="more-o" />
+                        <van-icon name="more-o" @click="isMoreShow" />
                     </div>
                 </div>
                 <div class="card">
@@ -93,7 +101,7 @@
                     <div>收藏歌单占位</div>
                     <div>xxxxx</div>
                     <div>
-                        <van-icon name="more-o" />
+                        <van-icon name="more-o" @click="isMoreShow" />
                     </div>
                 </div>
                 <div class="card">
@@ -102,11 +110,23 @@
                     <div>收藏歌单占位</div>
                     <div>xxxxx</div>
                     <div>
-                        <van-icon name="more-o" />
+                        <van-icon name="more-o" @click="isMoreShow" />
                     </div>
                 </div>
             </div>
         </div>
+        <!-- 歌单操作 -->
+        <van-action-sheet v-model:show="moreShow" title="歌单:&nbsp;欧美流行">
+            <van-button size="large" color="#fff" style="color: #000;" icon="share-o" type="primary" @click="isShare">
+                分享
+            </van-button>
+            <van-button size="large" color="#fff" style="color: #000; margin-bottom: 10px;" icon="delete-o"
+                type="primary" @click="deleteList">
+                删除
+            </van-button>
+        </van-action-sheet>
+        <!-- 分享弹出层 -->
+        <van-share-sheet v-model:show="showShare" title="立即分享" :options="options" style="background-color: #fff;" />
         <!-- 底部 -->
         <Tip />
         <!-- 防止底部遮挡 -->
@@ -115,10 +135,14 @@
 </template>
 
 <script>
-import { Grid, GridItem, Swipe, SwipeItem, Icon, Divider, ActionSheet } from 'vant';
+import {
+    Grid, GridItem, Swipe, SwipeItem, Icon, Divider, ActionSheet,
+    Field, CellGroup, Checkbox, CheckboxGroup, Tag, Button, ShareSheet, Dialog, Notify
+} from 'vant';
 import { Image as VanImage } from 'vant';
 import Tip from '@/components/Tip';
 import { ref } from 'vue';
+
 export default {
     name: 'MyIndex',
     setup() {
@@ -133,12 +157,57 @@ export default {
             { id: 7, icon: 'audio', text: '我的播客', path: '/myindex/index-podcast' },
             { id: 8, icon: 'new', text: '音乐罐子', path: '/myindex/musicbottle' },
         ];
+
         // 判断展示创建歌单的弹出框
-        const show = ref(false);
-        function createShow() {
-            show.value = !show.value;
+        const createShow = ref(false);
+        function isCreateShow() {
+            createShow.value = !createShow.value;
         }
-        return { grids, show, createShow };
+        // 新歌单的名字
+        const newMusicList = ref('');
+        // 新歌单的选项(只要和选择框的name属性相同就为选中)
+        const checked = ref(['no', 'no']);
+
+        // 判断展示歌单操作的弹出框
+        const moreShow = ref(false);
+        function isMoreShow() {
+            moreShow.value = !moreShow.value;
+        }
+        // 点击分享摁钮的操作
+        const showShare = ref(false);
+        function isShare() {
+            moreShow.value = false;
+            showShare.value = true;
+        }
+        // 分享的图片和文字
+        const options = [
+            [
+                { name: '复制链接', icon: 'link' },
+                { name: '微信', icon: 'wechat' },
+                { name: '朋友圈', icon: 'wechat-moments' },
+                { name: '微博', icon: 'weibo' },
+                { name: 'QQ', icon: 'qq' },
+            ]
+        ];
+        // 删除歌单
+        function deleteList() {
+            moreShow.value = false;
+            Dialog.confirm({
+                title: 'WARM PROMPT',
+                message:
+                    '确定要删除此歌单吗?',
+            })
+                .then(() => {
+                    // 确认的调用
+                    Notify({ type: 'success', message: '🔔删除成功！', color: "#fff", background: "#e60026" });
+                })
+                .catch(() => {
+                    // 取消的调用
+                });
+        }
+
+
+        return { grids, isCreateShow, isMoreShow, createShow, moreShow, newMusicList, checked, isShare, showShare, options, deleteList, Dialog };
     },
     components: {
         Tip,
@@ -149,7 +218,14 @@ export default {
         VanImage: VanImage,
         VanIcon: Icon,
         VanDivider: Divider,
-        VanActionSheet: ActionSheet
+        VanActionSheet: ActionSheet,
+        VanCellGroup: CellGroup,
+        VanField: Field,
+        VanCheckboxGroup: CheckboxGroup,
+        VanCheckbox: Checkbox,
+        VanTag: Tag,
+        VanButton: Button,
+        VanShareSheet: ShareSheet,
     },
 };
 </script>
@@ -269,7 +345,7 @@ export default {
     }
 
     div:nth-child(1) {
-        font-size: 10px;
+        font-size: 13px;
         color: rgb(122, 119, 119);
 
         span {
@@ -279,14 +355,14 @@ export default {
 
         .plus {
             float: right;
-            font-size: 22px;
-            margin-right: 15px;
+            font-size: 23px;
+            margin-right: 10px;
         }
 
         .more-o {
             float: right;
             font-size: 22px;
-            margin-right: 10px;
+            margin-right: 15px;
         }
     }
 
@@ -331,5 +407,24 @@ export default {
             }
         }
     }
+}
+
+.checked {
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 13px;
+}
+
+.submitList {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    width: 50%;
+    height: 43px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.showShare {
+    background-color: #fff;
 }
 </style>

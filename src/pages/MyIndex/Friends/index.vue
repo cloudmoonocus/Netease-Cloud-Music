@@ -1,6 +1,6 @@
 <template>
     <div style="background-color: #fff">
-        <van-tabs v-model:active="active">
+        <van-tabs>
             <van-tab title="关注">
                 <div class="out">
                     <div class="card">

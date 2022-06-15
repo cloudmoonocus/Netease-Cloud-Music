@@ -16,7 +16,7 @@
             <img src="https://p1.music.126.net/_aEPXmHuskM-g140GROZnQ==/109951163879490620.jpg?param=45y45" alt="" />
             <span class="cname">你的好友4号</span>
         </div>
-        <div class="allFriend">
+        <div class="allFriend" @click="allFriend">
             <van-icon name="more-o" class="icon" />
             <span>全部好友</span>
         </div>
@@ -31,6 +31,7 @@
 </template>
 
 <script>
+import router from '@/routers';
 import { Icon } from 'vant';
 import { onMounted } from 'vue';
 export default {
@@ -51,7 +52,12 @@ export default {
             }
         }
 
-        return { checkLength };
+        // 全部好友跳转
+        function allFriend() {
+            router.push('/myindex/friends')
+        }
+
+        return { checkLength, allFriend };
     },
     components: {
         VanIcon: Icon,
@@ -97,6 +103,7 @@ export default {
             height: 40px;
             width: 40px;
         }
+
         span {
             font-size: 13px;
             display: inline-block;
@@ -106,6 +113,7 @@ export default {
         }
     }
 }
+
 .second {
     background-color: #fff;
     height: 30px;
@@ -117,18 +125,21 @@ export default {
         font-size: 13px;
         font-weight: 700;
     }
+
     s:nth-child(2) {
         float: right;
         margin-top: 10px;
         margin-right: 18px;
         font-size: 13px;
     }
+
     s:nth-child(3) {
         float: right;
         margin-top: 10px;
         margin-right: 18px;
         font-size: 13px;
     }
+
     span:nth-child(4) {
         float: right;
         margin-top: 10px;
