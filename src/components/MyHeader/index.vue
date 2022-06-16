@@ -1,6 +1,6 @@
 <template>
     <!-- 顶部 -->
-    <van-sticky :offset-top="0">
+    <van-sticky :offset-top="0" v-if="$route.meta.activeHeader">
         <van-nav-bar :title="title">
             <template #left>
                 <van-icon @click="showPopup" name="wap-nav" size="25" style="color: #e60026" />
@@ -13,13 +13,12 @@
     <!-- 侧边栏 -->
     <van-popup v-model:show="show" position="left" :style="{ height: '100%', width: '80%', float: 'left' }"
         class="van-popup">
-        <div class="headDiv">
-            <van-image round width="35px" height="35px" src="https://avatars.githubusercontent.com/u/98140702?s=96&v=4"
+        <div class="headDiv" @click="$router.push('/index'); show = false">
+            <van-image round width="35px" height="35px"
+                src="https://img-qn-4.51miz.com/Element/00/88/82/33/f95ce822_E888233_91015ccc.png!/quality/90/unsharp/true/compress/true/format/png/fh/320"
                 fit="cover" position="left" class="van-image" />
-            <span class="headSpan">cloudmoonocus</span>
+            <span class="headSpan">立即登录</span>
             <van-icon name="arrow" class="head-van-icon" />
-            &nbsp;&nbsp;&nbsp;&nbsp;
-            <van-icon name="scan" class="head-van-icon" />
         </div>
         <br />
         <van-cell-group inset>
@@ -81,7 +80,7 @@ export default {
     name: 'MyHeader',
     setup() {
         const route = useRoute();
-        let checked = ref();
+        const checked = ref(false);
         const show = ref(false);
         const title = ref();
         const showPopup = () => {
@@ -112,22 +111,22 @@ export default {
 };
 </script>
 
-<style scoped>
-.van-image {
-    margin: 10px 10px;
-}
-
+<style lang="less" scoped>
 .headDiv {
     display: flex;
-}
 
-.headSpan {
-    font-size: 20px;
-    margin-top: 12px;
-}
+    .van-image {
+        margin: 10px 10px;
+    }
 
-.head-van-icon {
-    font-size: 24px;
-    margin-top: 14px;
+    .headSpan {
+        font-size: 20px;
+        margin-top: 12px;
+    }
+
+    .head-van-icon {
+        font-size: 24px;
+        margin-top: 14px;
+    }
 }
 </style>

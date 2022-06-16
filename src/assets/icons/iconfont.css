@@ -1,8 +1,8 @@
 @font-face {
   font-family: "iconfont"; /* Project id 3447028 */
-  src: url('iconfont.woff2?t=1654595559826') format('woff2'),
-       url('iconfont.woff?t=1654595559826') format('woff'),
-       url('iconfont.ttf?t=1654595559826') format('truetype');
+  src: url('iconfont.woff2?t=1655344202041') format('woff2'),
+       url('iconfont.woff?t=1655344202041') format('woff'),
+       url('iconfont.ttf?t=1655344202041') format('truetype');
 }
 
 .iconfont {
@@ -11,6 +11,18 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-youxiang:before {
+  content: "\e612";
+}
+
+.icon-shoujidenglu:before {
+  content: "\e614";
+}
+
+.icon-youkexinxi:before {
+  content: "\e6af";
 }
 
 .icon-kaishi:before {

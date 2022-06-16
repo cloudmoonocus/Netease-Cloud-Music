@@ -124,7 +124,7 @@ export default {
             { id: 3, icon: 'column', text: '歌单', path: '/found/musiclist' },
             { id: 4, icon: 'descending', text: '排行榜', path: '/found/rankinglist' },
             { id: 5, icon: 'coupon', text: '数字专辑', path: '/found/digitalalbum' },
-            { id: 6, icon: 'graphic', text: '有声书', path: '/found/soundbook' },
+            { id: 6, icon: 'graphic', text: '有声书', path: '/podcast/soundbook' },
             { id: 7, icon: 'music', text: '关注新歌', path: '/found/focusnewmusic' },
             { id: 8, icon: 'fire', text: '歌房', path: '/found/musichouse' },
         ];

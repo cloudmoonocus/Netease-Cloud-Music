@@ -1,5 +1,5 @@
 <template>
-    <van-search v-model="value" placeholder="xxxx" shape="round" clearable />
+    <van-search v-model.trim="value" placeholder="xxxx" shape="round" clearable />
     <div class="hot" v-show="hotShow">
         <div class="first">
             <span>热搜榜</span>

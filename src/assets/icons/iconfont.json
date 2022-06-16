@@ -6,6 +6,27 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "8407284",
+      "name": "邮箱",
+      "font_class": "youxiang",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "7817226",
+      "name": "手机登录",
+      "font_class": "shoujidenglu",
+      "unicode": "e614",
+      "unicode_decimal": 58900
+    },
+    {
+      "icon_id": "21302988",
+      "name": "游客信息",
+      "font_class": "youkexinxi",
+      "unicode": "e6af",
+      "unicode_decimal": 59055
+    },
+    {
       "icon_id": "7872836",
       "name": "开始",
       "font_class": "kaishi",

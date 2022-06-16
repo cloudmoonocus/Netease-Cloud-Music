@@ -23,10 +23,8 @@
                                             </div>
                                         </div>
                                         <div>
-                                            <img
-                                                src="https://p1.music.126.net/J9t-hmMYJMVXpFdMgHMB6A==/109951167149343548.jpg?param=177y177"
-                                                alt=""
-                                            />
+                                            <img src="https://p1.music.126.net/J9t-hmMYJMVXpFdMgHMB6A==/109951167149343548.jpg?param=177y177"
+                                                alt="" />
                                             <div>I NEVER DIE</div>
                                             <div>已售1170张</div>
                                             <div>支持</div>
@@ -41,10 +39,8 @@
                                             </div>
                                         </div>
                                         <div>
-                                            <img
-                                                src="https://p1.music.126.net/J9t-hmMYJMVXpFdMgHMB6A==/109951167149343548.jpg?param=177y177"
-                                                alt=""
-                                            />
+                                            <img src="https://p1.music.126.net/J9t-hmMYJMVXpFdMgHMB6A==/109951167149343548.jpg?param=177y177"
+                                                alt="" />
                                             <div>I NEVER DIE</div>
                                             <div>已售1170张</div>
                                             <div>支持</div>
@@ -59,10 +55,8 @@
                                             </div>
                                         </div>
                                         <div>
-                                            <img
-                                                src="https://p1.music.126.net/J9t-hmMYJMVXpFdMgHMB6A==/109951167149343548.jpg?param=177y177"
-                                                alt=""
-                                            />
+                                            <img src="https://p1.music.126.net/J9t-hmMYJMVXpFdMgHMB6A==/109951167149343548.jpg?param=177y177"
+                                                alt="" />
                                             <div>I NEVER DIE</div>
                                             <div>已售1170张</div>
                                             <div>支持</div>
@@ -76,10 +70,8 @@
                                             </div>
                                         </div>
                                         <div>
-                                            <img
-                                                src="https://p1.music.126.net/J9t-hmMYJMVXpFdMgHMB6A==/109951167149343548.jpg?param=177y177"
-                                                alt=""
-                                            />
+                                            <img src="https://p1.music.126.net/J9t-hmMYJMVXpFdMgHMB6A==/109951167149343548.jpg?param=177y177"
+                                                alt="" />
                                             <div>I NEVER DIE</div>
                                             <div>已售1170张</div>
                                             <div>支持</div>
@@ -104,10 +96,8 @@
                                             </div>
                                         </div>
                                         <div>
-                                            <img
-                                                src="https://p1.music.126.net/J9t-hmMYJMVXpFdMgHMB6A==/109951167149343548.jpg?param=177y177"
-                                                alt=""
-                                            />
+                                            <img src="https://p1.music.126.net/J9t-hmMYJMVXpFdMgHMB6A==/109951167149343548.jpg?param=177y177"
+                                                alt="" />
                                             <div>I NEVER DIE</div>
                                             <div>已售1170张</div>
                                             <div>支持</div>
@@ -122,10 +112,8 @@
                                             </div>
                                         </div>
                                         <div>
-                                            <img
-                                                src="https://p1.music.126.net/J9t-hmMYJMVXpFdMgHMB6A==/109951167149343548.jpg?param=177y177"
-                                                alt=""
-                                            />
+                                            <img src="https://p1.music.126.net/J9t-hmMYJMVXpFdMgHMB6A==/109951167149343548.jpg?param=177y177"
+                                                alt="" />
                                             <div>I NEVER DIE</div>
                                             <div>已售1170张</div>
                                             <div>支持</div>
@@ -140,10 +128,8 @@
                                             </div>
                                         </div>
                                         <div>
-                                            <img
-                                                src="https://p1.music.126.net/J9t-hmMYJMVXpFdMgHMB6A==/109951167149343548.jpg?param=177y177"
-                                                alt=""
-                                            />
+                                            <img src="https://p1.music.126.net/J9t-hmMYJMVXpFdMgHMB6A==/109951167149343548.jpg?param=177y177"
+                                                alt="" />
                                             <div>I NEVER DIE</div>
                                             <div>已售1170张</div>
                                             <div>支持</div>
@@ -157,10 +143,8 @@
                                             </div>
                                         </div>
                                         <div>
-                                            <img
-                                                src="https://p1.music.126.net/J9t-hmMYJMVXpFdMgHMB6A==/109951167149343548.jpg?param=177y177"
-                                                alt=""
-                                            />
+                                            <img src="https://p1.music.126.net/J9t-hmMYJMVXpFdMgHMB6A==/109951167149343548.jpg?param=177y177"
+                                                alt="" />
                                             <div>I NEVER DIE</div>
                                             <div>已售1170张</div>
                                             <div>支持</div>
@@ -182,10 +166,8 @@
                                             <div class="three">1</div>
                                         </div>
                                         <div>
-                                            <img
-                                                src="https://p1.music.126.net/J9t-hmMYJMVXpFdMgHMB6A==/109951167149343548.jpg?param=177y177"
-                                                alt=""
-                                            />
+                                            <img src="https://p1.music.126.net/J9t-hmMYJMVXpFdMgHMB6A==/109951167149343548.jpg?param=177y177"
+                                                alt="" />
                                             <div>I NEVER DIE</div>
                                             <div>已售1170张</div>
                                             <div>支持</div>
@@ -196,10 +178,8 @@
                                             <div class="three">2</div>
                                         </div>
                                         <div>
-                                            <img
-                                                src="https://p1.music.126.net/J9t-hmMYJMVXpFdMgHMB6A==/109951167149343548.jpg?param=177y177"
-                                                alt=""
-                                            />
+                                            <img src="https://p1.music.126.net/J9t-hmMYJMVXpFdMgHMB6A==/109951167149343548.jpg?param=177y177"
+                                                alt="" />
                                             <div>I NEVER DIE</div>
                                             <div>已售1170张</div>
                                             <div>支持</div>
@@ -210,10 +190,8 @@
                                             <div class="three">3</div>
                                         </div>
                                         <div>
-                                            <img
-                                                src="https://p1.music.126.net/J9t-hmMYJMVXpFdMgHMB6A==/109951167149343548.jpg?param=177y177"
-                                                alt=""
-                                            />
+                                            <img src="https://p1.music.126.net/J9t-hmMYJMVXpFdMgHMB6A==/109951167149343548.jpg?param=177y177"
+                                                alt="" />
                                             <div>I NEVER DIE</div>
                                             <div>已售1170张</div>
                                             <div>支持</div>
@@ -224,10 +202,8 @@
                                             <div class="noThree">4</div>
                                         </div>
                                         <div>
-                                            <img
-                                                src="https://p1.music.126.net/J9t-hmMYJMVXpFdMgHMB6A==/109951167149343548.jpg?param=177y177"
-                                                alt=""
-                                            />
+                                            <img src="https://p1.music.126.net/J9t-hmMYJMVXpFdMgHMB6A==/109951167149343548.jpg?param=177y177"
+                                                alt="" />
                                             <div>I NEVER DIE</div>
                                             <div>已售1170张</div>
                                             <div>支持</div>
@@ -248,10 +224,8 @@
                                             <div class="three">1</div>
                                         </div>
                                         <div>
-                                            <img
-                                                src="https://p1.music.126.net/J9t-hmMYJMVXpFdMgHMB6A==/109951167149343548.jpg?param=177y177"
-                                                alt=""
-                                            />
+                                            <img src="https://p1.music.126.net/J9t-hmMYJMVXpFdMgHMB6A==/109951167149343548.jpg?param=177y177"
+                                                alt="" />
                                             <div>I NEVER DIE</div>
                                             <div>已售1170张</div>
                                             <div>支持</div>
@@ -262,10 +236,8 @@
                                             <div class="three">2</div>
                                         </div>
                                         <div>
-                                            <img
-                                                src="https://p1.music.126.net/J9t-hmMYJMVXpFdMgHMB6A==/109951167149343548.jpg?param=177y177"
-                                                alt=""
-                                            />
+                                            <img src="https://p1.music.126.net/J9t-hmMYJMVXpFdMgHMB6A==/109951167149343548.jpg?param=177y177"
+                                                alt="" />
                                             <div>I NEVER DIE</div>
                                             <div>已售1170张</div>
                                             <div>支持</div>
@@ -276,10 +248,8 @@
                                             <div class="three">3</div>
                                         </div>
                                         <div>
-                                            <img
-                                                src="https://p1.music.126.net/J9t-hmMYJMVXpFdMgHMB6A==/109951167149343548.jpg?param=177y177"
-                                                alt=""
-                                            />
+                                            <img src="https://p1.music.126.net/J9t-hmMYJMVXpFdMgHMB6A==/109951167149343548.jpg?param=177y177"
+                                                alt="" />
                                             <div>I NEVER DIE</div>
                                             <div>已售1170张</div>
                                             <div>支持</div>
@@ -290,10 +260,8 @@
                                             <div class="noThree">4</div>
                                         </div>
                                         <div>
-                                            <img
-                                                src="https://p1.music.126.net/J9t-hmMYJMVXpFdMgHMB6A==/109951167149343548.jpg?param=177y177"
-                                                alt=""
-                                            />
+                                            <img src="https://p1.music.126.net/J9t-hmMYJMVXpFdMgHMB6A==/109951167149343548.jpg?param=177y177"
+                                                alt="" />
                                             <div>I NEVER DIE</div>
                                             <div>已售1170张</div>
                                             <div>支持</div>
@@ -325,10 +293,8 @@
                                             </div>
                                         </div>
                                         <div>
-                                            <img
-                                                src="https://p1.music.126.net/J9t-hmMYJMVXpFdMgHMB6A==/109951167149343548.jpg?param=177y177"
-                                                alt=""
-                                            />
+                                            <img src="https://p1.music.126.net/J9t-hmMYJMVXpFdMgHMB6A==/109951167149343548.jpg?param=177y177"
+                                                alt="" />
                                             <div>I NEVER DIE</div>
                                             <div>已售1170张</div>
                                             <div>支持</div>
@@ -343,10 +309,8 @@
                                             </div>
                                         </div>
                                         <div>
-                                            <img
-                                                src="https://p1.music.126.net/J9t-hmMYJMVXpFdMgHMB6A==/109951167149343548.jpg?param=177y177"
-                                                alt=""
-                                            />
+                                            <img src="https://p1.music.126.net/J9t-hmMYJMVXpFdMgHMB6A==/109951167149343548.jpg?param=177y177"
+                                                alt="" />
                                             <div>I NEVER DIE</div>
                                             <div>已售1170张</div>
                                             <div>支持</div>
@@ -361,10 +325,8 @@
                                             </div>
                                         </div>
                                         <div>
-                                            <img
-                                                src="https://p1.music.126.net/J9t-hmMYJMVXpFdMgHMB6A==/109951167149343548.jpg?param=177y177"
-                                                alt=""
-                                            />
+                                            <img src="https://p1.music.126.net/J9t-hmMYJMVXpFdMgHMB6A==/109951167149343548.jpg?param=177y177"
+                                                alt="" />
                                             <div>I NEVER DIE</div>
                                             <div>已售1170张</div>
                                             <div>支持</div>
@@ -378,10 +340,8 @@
                                             </div>
                                         </div>
                                         <div>
-                                            <img
-                                                src="https://p1.music.126.net/J9t-hmMYJMVXpFdMgHMB6A==/109951167149343548.jpg?param=177y177"
-                                                alt=""
-                                            />
+                                            <img src="https://p1.music.126.net/J9t-hmMYJMVXpFdMgHMB6A==/109951167149343548.jpg?param=177y177"
+                                                alt="" />
                                             <div>I NEVER DIE</div>
                                             <div>已售1170张</div>
                                             <div>支持</div>
@@ -406,10 +366,8 @@
                                             </div>
                                         </div>
                                         <div>
-                                            <img
-                                                src="https://p1.music.126.net/J9t-hmMYJMVXpFdMgHMB6A==/109951167149343548.jpg?param=177y177"
-                                                alt=""
-                                            />
+                                            <img src="https://p1.music.126.net/J9t-hmMYJMVXpFdMgHMB6A==/109951167149343548.jpg?param=177y177"
+                                                alt="" />
                                             <div>I NEVER DIE</div>
                                             <div>已售1170张</div>
                                             <div>支持</div>
@@ -424,10 +382,8 @@
                                             </div>
                                         </div>
                                         <div>
-                                            <img
-                                                src="https://p1.music.126.net/J9t-hmMYJMVXpFdMgHMB6A==/109951167149343548.jpg?param=177y177"
-                                                alt=""
-                                            />
+                                            <img src="https://p1.music.126.net/J9t-hmMYJMVXpFdMgHMB6A==/109951167149343548.jpg?param=177y177"
+                                                alt="" />
                                             <div>I NEVER DIE</div>
                                             <div>已售1170张</div>
                                             <div>支持</div>
@@ -442,10 +398,8 @@
                                             </div>
                                         </div>
                                         <div>
-                                            <img
-                                                src="https://p1.music.126.net/J9t-hmMYJMVXpFdMgHMB6A==/109951167149343548.jpg?param=177y177"
-                                                alt=""
-                                            />
+                                            <img src="https://p1.music.126.net/J9t-hmMYJMVXpFdMgHMB6A==/109951167149343548.jpg?param=177y177"
+                                                alt="" />
                                             <div>I NEVER DIE</div>
                                             <div>已售1170张</div>
                                             <div>支持</div>
@@ -459,10 +413,8 @@
                                             </div>
                                         </div>
                                         <div>
-                                            <img
-                                                src="https://p1.music.126.net/J9t-hmMYJMVXpFdMgHMB6A==/109951167149343548.jpg?param=177y177"
-                                                alt=""
-                                            />
+                                            <img src="https://p1.music.126.net/J9t-hmMYJMVXpFdMgHMB6A==/109951167149343548.jpg?param=177y177"
+                                                alt="" />
                                             <div>I NEVER DIE</div>
                                             <div>已售1170张</div>
                                             <div>支持</div>
@@ -484,10 +436,8 @@
                                             <div class="three">1</div>
                                         </div>
                                         <div>
-                                            <img
-                                                src="https://p1.music.126.net/J9t-hmMYJMVXpFdMgHMB6A==/109951167149343548.jpg?param=177y177"
-                                                alt=""
-                                            />
+                                            <img src="https://p1.music.126.net/J9t-hmMYJMVXpFdMgHMB6A==/109951167149343548.jpg?param=177y177"
+                                                alt="" />
                                             <div>I NEVER DIE</div>
                                             <div>已售1170张</div>
                                             <div>支持</div>
@@ -498,10 +448,8 @@
                                             <div class="three">2</div>
                                         </div>
                                         <div>
-                                            <img
-                                                src="https://p1.music.126.net/J9t-hmMYJMVXpFdMgHMB6A==/109951167149343548.jpg?param=177y177"
-                                                alt=""
-                                            />
+                                            <img src="https://p1.music.126.net/J9t-hmMYJMVXpFdMgHMB6A==/109951167149343548.jpg?param=177y177"
+                                                alt="" />
                                             <div>I NEVER DIE</div>
                                             <div>已售1170张</div>
                                             <div>支持</div>
@@ -512,10 +460,8 @@
                                             <div class="three">3</div>
                                         </div>
                                         <div>
-                                            <img
-                                                src="https://p1.music.126.net/J9t-hmMYJMVXpFdMgHMB6A==/109951167149343548.jpg?param=177y177"
-                                                alt=""
-                                            />
+                                            <img src="https://p1.music.126.net/J9t-hmMYJMVXpFdMgHMB6A==/109951167149343548.jpg?param=177y177"
+                                                alt="" />
                                             <div>I NEVER DIE</div>
                                             <div>已售1170张</div>
                                             <div>支持</div>
@@ -526,10 +472,8 @@
                                             <div class="noThree">4</div>
                                         </div>
                                         <div>
-                                            <img
-                                                src="https://p1.music.126.net/J9t-hmMYJMVXpFdMgHMB6A==/109951167149343548.jpg?param=177y177"
-                                                alt=""
-                                            />
+                                            <img src="https://p1.music.126.net/J9t-hmMYJMVXpFdMgHMB6A==/109951167149343548.jpg?param=177y177"
+                                                alt="" />
                                             <div>I NEVER DIE</div>
                                             <div>已售1170张</div>
                                             <div>支持</div>
@@ -550,10 +494,8 @@
                                             <div class="three">1</div>
                                         </div>
                                         <div>
-                                            <img
-                                                src="https://p1.music.126.net/J9t-hmMYJMVXpFdMgHMB6A==/109951167149343548.jpg?param=177y177"
-                                                alt=""
-                                            />
+                                            <img src="https://p1.music.126.net/J9t-hmMYJMVXpFdMgHMB6A==/109951167149343548.jpg?param=177y177"
+                                                alt="" />
                                             <div>I NEVER DIE</div>
                                             <div>已售1170张</div>
                                             <div>支持</div>
@@ -564,10 +506,8 @@
                                             <div class="three">2</div>
                                         </div>
                                         <div>
-                                            <img
-                                                src="https://p1.music.126.net/J9t-hmMYJMVXpFdMgHMB6A==/109951167149343548.jpg?param=177y177"
-                                                alt=""
-                                            />
+                                            <img src="https://p1.music.126.net/J9t-hmMYJMVXpFdMgHMB6A==/109951167149343548.jpg?param=177y177"
+                                                alt="" />
                                             <div>I NEVER DIE</div>
                                             <div>已售1170张</div>
                                             <div>支持</div>
@@ -578,10 +518,8 @@
                                             <div class="three">3</div>
                                         </div>
                                         <div>
-                                            <img
-                                                src="https://p1.music.126.net/J9t-hmMYJMVXpFdMgHMB6A==/109951167149343548.jpg?param=177y177"
-                                                alt=""
-                                            />
+                                            <img src="https://p1.music.126.net/J9t-hmMYJMVXpFdMgHMB6A==/109951167149343548.jpg?param=177y177"
+                                                alt="" />
                                             <div>I NEVER DIE</div>
                                             <div>已售1170张</div>
                                             <div>支持</div>
@@ -592,10 +530,8 @@
                                             <div class="noThree">4</div>
                                         </div>
                                         <div>
-                                            <img
-                                                src="https://p1.music.126.net/J9t-hmMYJMVXpFdMgHMB6A==/109951167149343548.jpg?param=177y177"
-                                                alt=""
-                                            />
+                                            <img src="https://p1.music.126.net/J9t-hmMYJMVXpFdMgHMB6A==/109951167149343548.jpg?param=177y177"
+                                                alt="" />
                                             <div>I NEVER DIE</div>
                                             <div>已售1170张</div>
                                             <div>支持</div>
@@ -641,6 +577,7 @@ export default {
         margin-top: 10px;
         font-size: 13px;
     }
+
     .second {
         margin-top: 10px;
 
@@ -659,12 +596,14 @@ export default {
                     font-weight: 700;
                     color: #c0112e;
                 }
+
                 .noThree {
                     margin-left: 20%;
                     margin-top: 50%;
                     font-size: 20px;
                     color: rgb(122, 119, 119);
                 }
+
                 .up {
                     margin-left: 20%;
                     font-size: 10px;
@@ -676,6 +615,7 @@ export default {
                         color: rgb(122, 119, 119);
                     }
                 }
+
                 .down {
                     margin-left: 20%;
                     font-size: 10px;
@@ -687,6 +627,7 @@ export default {
                         color: rgb(122, 119, 119);
                     }
                 }
+
                 .no {
                     margin-left: 20%;
                     font-size: 10px;
@@ -694,6 +635,7 @@ export default {
                     color: rgb(122, 119, 119);
                 }
             }
+
             div:nth-child(2) {
                 position: relative;
                 width: 85%;
@@ -704,12 +646,14 @@ export default {
                     border-radius: 4px;
                     height: 80px;
                 }
+
                 div:nth-child(2) {
                     position: absolute;
                     top: 20px;
                     margin-left: 90px;
                     font-size: 14px;
                 }
+
                 div:nth-child(3) {
                     position: absolute;
                     top: 45px;
@@ -717,6 +661,7 @@ export default {
                     font-size: 10px;
                     color: rgb(122, 119, 119);
                 }
+
                 div:nth-child(4) {
                     position: absolute;
                     top: 30px;
