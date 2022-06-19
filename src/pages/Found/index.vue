@@ -22,7 +22,7 @@
                 <span class="recommention">推荐歌单</span>
                 <a class="more" @click="$router.push('/found/musiclist')">更多 ></a>
             </div>
-            <van-grid :border="false" :column-num="3">
+            <van-grid :border="false" :column-num="3" class="vanGridItemParent">
                 <van-grid-item class="vanGridItem">
                     <van-image class="vanImage" radius="5"
                         src="https://p2.music.126.net/iHbKrvHFfHb1y3Osu9EnPQ==/109951166726930602.jpg?param=140y140" />
@@ -221,7 +221,8 @@ export default {
 };
 </script>
 
-<style lang="less" scoped>
+<style scoped>
+// 项目初期未考虑周全，所以css很乱，但除“发现”“播客”外，其余都是Less格式
 .swiper {
     margin-left: 50%;
     transform: translate(-50%);
@@ -290,6 +291,7 @@ export default {
 
 .recChild {
     display: flex;
+    height: 30px;
 }
 
 .recommention {
@@ -323,6 +325,12 @@ export default {
 
 .vanImage {
     border-radius: 10px;
+    width: 95px;
+}
+
+.vanGridItemParent {
+    display: flex;
+    align-items: flex-start;
 }
 
 .vanGridItem {
@@ -334,6 +342,11 @@ export default {
 .vanGridItem a {
     margin-top: 4px;
     font-size: 10px;
+    width: 95px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
 }
 
 .rec2 {
