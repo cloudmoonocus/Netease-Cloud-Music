@@ -3,7 +3,7 @@
 接口文档：[https://neteasecloudmusicapi.vercel.app/#/]
 
 ### Vue@3.2.36+Vant@3.49+Pinia+VueRouter+Nprogress+Axios
-
+项目初期未考虑周全，但除“发现”“播客”CSS很乱外，其余都是Less格式
 <hr>
 <br>全局灰色：rgb(122, 119, 119)
 <br>网易云音乐红色：#e60026
