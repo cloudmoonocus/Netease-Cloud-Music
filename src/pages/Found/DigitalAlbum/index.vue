@@ -184,7 +184,9 @@ export default {
         div:nth-child(2) {
             margin: 0 auto;
             margin-top: 3px;
+            width: 70px;
             font-size: 13px;
+            text-align: center;
             color: rgb(122, 119, 119);
         }
     }
