@@ -21,7 +21,7 @@
                 <div>
                     <van-icon name="expand-o" class="icon" />
                 </div>
-                <div>语种风格馆</div>
+                <div>风格馆</div>
             </div>
             <div class="fun" @click="routerBuy">
                 <div>
