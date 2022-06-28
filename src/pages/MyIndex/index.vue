@@ -7,8 +7,7 @@
             <img src="https://avatars.githubusercontent.com/u/98140702?s=96&v=4" alt="你的头像" class="headImage" />
             <div class="headName">cloudmoon</div>
             <div class="headInfor">
-                2 关注&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;1
-                粉丝&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;Lv.7
+                 2 关注 | 1 粉丝 | Lv.7
             </div>
         </div>
         <!-- 功能列表 -->
